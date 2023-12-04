@@ -1,0 +1,557 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Istok+Web&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Asar&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Giga:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Qwitcher+Grypen&display=swap');
+
+
+
+:root{
+
+    --cor0: #012606;
+    --cor1: #D9ABA7;
+    --cor2: #D9BFA9;
+    --cor3: #592715;
+    --cor4: #BF5656;
+
+    --fonte1: 'Istok Web', sans-serif;
+    --fonte2: 'Asar', serif;
+    --fonte3: 'Lexend Giga', sans-serif;
+    --fonte4:'Qwitcher Grypen', cursive;
+
+
+}
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+
+html{
+
+    scroll-behavior: smooth;
+
+}
+
+body{
+    
+
+    background-color: white;
+
+}
+
+.logo {
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    z-index: 2; /* Ajuste a ordem z-index conforme necessário */
+}
+
+.logo img {
+    width: 100%; /* Ajuste o tamanho da logo conforme necessário */
+    height: auto;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#video-background {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.menu {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: right;
+    padding: 10px;
+    padding-top: 5%;
+    box-sizing: border-box;
+    z-index: auto;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    
+
+}
+
+.menu ul {
+    list-style: none;
+    text-align: right;
+    margin: 0;
+    padding: 0;
+}
+
+.menu ul li {
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-right: 30px;
+}
+
+.menu ul li a {
+    display: inline-block;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 400;
+    font-family: var(--fonte1);
+    color: var(--cor4);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.068);
+    font-size: 150%;
+    
+}
+
+.menu ul li a:hover{
+
+    
+    color: var(--cor1);
+
+}
+
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: var(--fonte3);
+    color: var(--cor4);
+    text-shadow: 2px 2px 2px rgba(12, 12, 12, 0.075);
+    z-index: 1;
+}
+
+.content h1 {
+    font-size: 300%;
+
+}
+
+#titulosobre{
+    font-family: var(--fonte3) ;
+    font-size: 180%;
+    color: var(--cor4);
+    padding: 0% 2% 1% 25%;
+    word-spacing: 5px;
+
+
+}
+
+#sobre{
+
+    font-family: var(--fonte2);
+    font-size: 150%;
+    padding: 0% 2% 1% 25%;
+    word-spacing: 5px;
+    color: var(--cor3);
+
+
+
+
+}
+#sobreid{
+    display: flex; 
+    padding: 15% 0% 5% 0%;
+
+
+
+}
+
+#alinhamentosobre{
+    display: flex;
+    flex-direction: column;
+    
+
+}
+
+.cafe01{
+
+    text-align: right;
+    margin: -10% 0% -1% 0%;
+}
+
+.cafe02{
+
+    margin: 12% 0% -30% 0%;
+}
+
+
+.graos{
+
+    font-family: var(--fonte4);
+    font-size:500%;
+    margin-bottom: -5%;
+    color:  var(--cor4);
+    text-align: center;
+}
+
+#tipos {
+    display: flex;
+}
+
+
+
+#robusta {
+    
+    flex: 1;
+    padding: 5% 5% 5% 5%;
+    margin: 5% 5% 1% 5%;
+    font-family: var(--fonte1);
+
+}
+
+#arabica{
+
+    flex: 1;
+    padding: 5% 5% 5% 5%;
+    margin: 5% 5% 1% 5%;
+    font-family: var(--fonte1);
+
+}
+
+#arabica #robusta, h2{
+
+    text-align: center;
+    font-family: var(--fonte3);
+    font-size: 180%;
+    color: var(--cor4);
+    word-spacing: -5px;
+    margin-bottom: 5%;
+}
+
+#arabica #robusta, p{
+
+    text-align: justify;
+    font-family: var(--fonte2);
+    font-size: 110%;
+    color:  var(--cor3);
+}
+
+.linha-vertical {
+    border-left: 1px solid var(--cor4); /* Cor e largura da linha */
+    height: 200px; /* Altura da linha */
+    margin: 12% 0% 0% 0%;
+
+  }
+
+
+
+.copo01{
+    margin-top: 15%;
+    text-align: right;
+    margin-bottom: -50%;
+}
+
+.cardapio{
+    margin-top: 5%;
+    padding: 25% 20% 15% 5%;
+}
+
+.cardapio, h1{
+
+    font-family: var(--fonte4);
+    font-size: 300%;
+    color: var(--cor4);
+    padding: 5% 0 0 5%;
+    text-align: left;
+} 
+
+.cardapio, h2{
+
+    font-family: var(--fonte2);
+    font-size: 150%;
+    color: var(--cor3);
+    text-align: left;
+    padding: 1% 0 0 3%;
+    margin-bottom: 0.5%;
+
+}
+
+.cardapio, p{
+
+    font-family: var(--fonte1);
+    font-size: 110%;
+    color: var(--cor3);
+    text-align: left;
+    padding: 1% 0 0 3%;
+}
+
+
+
+
+.contato{
+    
+    padding-top: 8%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.contato, h1{
+
+    font-family: var(--fonte2);
+    font-size: 150%;
+    color: var(--cor4);
+
+}
+.contato02, h1{
+
+    text-align: left;
+}
+
+.container {
+
+    width: 40%;
+    margin: auto;
+    overflow: hidden;
+    padding: 10px;
+    text-align: left;
+
+}
+
+
+form {
+
+    background: white;
+    padding: 20px;
+    margin-top: 50px;
+    border-radius: 5px;
+
+}
+
+label {
+
+    display: block;
+    margin: 15px 0 5px 0;
+
+}
+
+input,
+textarea {
+
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    margin-top: 3px;
+    border: 1px solid #967979;
+    border-radius: 4px;
+    box-sizing: border-box;
+    
+}
+
+input[type="submit"] {
+
+    background-color: var(--cor1);
+    color: var(--cor3);
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background-color: #ffffff;
+}
+
+
+.contato02 {
+    width: 40%; /* Ajuste a largura conforme necessário */
+    padding: 10px;
+    text-align: left;
+    margin-top: 5%;
+}
+
+.politicaprivacidade{
+
+    padding: 1% 5% 5% 5%;
+}
+
+.politicaprivacidade, h1{
+
+    font-family: var(--fonte3);
+    font-size: 125%;
+    color: var(--cor4);
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.politicaprivacidade, h2{
+
+    font-family: var(--fonte2);
+    font-size: 125%;
+    color: var(--cor3);
+    text-align: left;
+    padding: 1% 0 1% 3%;
+}
+
+.politicaprivacidade, p{
+
+    padding-right: 10%;
+    word-spacing: 5%;
+}
+
+
+.termouso{
+
+    padding: 1% 5% 5% 5%;
+}
+
+.termouso, h1{
+
+    font-family: var(--fonte3);
+    font-size: 125%;
+    color: var(--cor4);
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.termouso, h2{
+
+    font-family: var(--fonte2);
+    font-size: 125%;
+    color: var(--cor3);
+    text-align: left;
+    padding: 1% 0 1% 3%;
+}
+
+.termouso, p{
+
+    padding-right: 10%;
+    word-spacing: 5%;
+}
+
+.politicaproduto{
+
+    padding: 1% 5% 5% 5%;
+}
+
+.politicaproduto, h1{
+
+    font-family: var(--fonte3);
+    font-size: 125%;
+    color: var(--cor4);
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.politicaproduto, h2{
+
+    font-family: var(--fonte2);
+    font-size: 125%;
+    color: var(--cor3);
+    text-align: left;
+    padding: 1% 0 1% 3%;
+}
+
+.politicaproduto, p{
+
+    padding-right: 10%;
+    word-spacing: 5%;
+}
+
+.cookie{
+
+    padding: 1% 5% 5% 5%;
+}
+
+.cookie, h1{
+
+    font-family: var(--fonte3);
+    font-size: 125%;
+    color: var(--cor4);
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.cookie, h2{
+
+    font-family: var(--fonte2);
+    font-size: 125%;
+    color: var(--cor3);
+    text-align: left;
+    padding: 1% 0 1% 3%;
+}
+
+.cookie, p{
+
+    padding-right: 10%;
+    word-spacing: 5%;
+}
+
+
+
+footer{
+
+    position: relative;
+    margin-bottom: 0px;
+    text-align: left;
+    background-color: var(--cor4);
+    z-index: 1;
+}
+
+.redes{
+    padding: 1% 20% 5% 5%;
+}
+
+
+
+.footermenu {
+    margin-top: -8%;
+    font-family: var(--fonte1);
+    font-style: normal;
+    text-align: right;
+    font-size: 17px;
+    clear: both; /* Adicione esta linha para limpar os elementos flutuantes */
+}
+
+.footermenu ul {
+    
+    list-style: none;
+    text-align: right;
+    margin: 0;
+    padding: 0;
+}
+
+.footermenu ul li {
+    display: inline-block;
+    
+}
+
+.footermenu ul li a {
+    padding-top: 6%;
+    display: inline-block;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 400;
+    font-family: var(--fonte1);
+    color: var(--cor1);
+    margin-right: 30px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.068);
+    font-size: 120%;
+    
+}
+
+.footermenu ul li a:hover{
+
+    
+    color: var(--cor3);
+
+}
+
+h3{
+    font-family: var(--fonte1);
+    color: var(--cor1);
+    font-size: 13px;
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: 1%;
+    padding: 30px;
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>
+        Contato
+    </title>
+</head>
+<body>
+    <header>
+    
+    
+        <div class="logo">
+            <picture>
+                <source media="(max-width: 780px)" srcset="imagens/logopq.png">
+                <img src="imagens/logo01.png" alt="Logo da Sua Empresa">
+            </picture>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="home.html" target="_self">Home</a></li>
+                <li><a href="sobre.html" target="_self">Sobre</a></li>
+                <li><a href="cardapio.html" target="_self">Cardápio</a></li>
+                <li><a href="contato.html" target="_self">Contato</a></li>
+            </ul>
+        </div>
+</header>
+
+
+<main class="contato">
+
+
+   
+        <div class="container">
+            <form action="processar_formulario.php" method="post">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+        <div class="contato02">
+            <h1>Café MB</h1>
+            <p>
+                <adress><strong>Endereço:</strong> Rua dos Grãos, 123 <br></adress>
+                <strong>Cidade:</strong> Cafelândia <br>
+                <strong>Estado:</strong> Aromática <br>
+                <strong>CEP:</strong> 12345-678 <br>
+                <strong>Telefone:</strong> (55) 1234-5678
+                <br>
+            </p>
+            <br>
+        </div>
+
+
+</main>
+
+
+<footer>
+
+    <hr>
+
+    <div class="redes">
+        <a href="https://www.instagram.com/designmaabs/" target="_blank"><img src="icone/instagrambranco.png" alt="instagram.png"></a>
+        <a href="https://www.instagram.com/designmaabs/" target="_blank"><img src="icone/tiktokbranco.png" alt="tiktok.png"></a>
+    </div>
+
+        <div class="footermenu">
+
+            <ul>
+
+                <li><a href="politicaprivacidade.html">POLÍTICA DE PRIVACIDADE</a></li>
+                <li><a href="politicaproduto.html">POLÍTICA DE PRODUTO</a></li>
+                <li><a href="termosuso.html">TERMOS DE USO</a></li>
+                <li><a href="cookie.html">POLÍTICA DE COOKIE</a></li>
+
+            </ul>
+
+        </div>
+
+        <h3>
+
+            2023 | Todos os direitos reservados.
+
+        </h3>
+
+    </footer>
+
+</body>
+</html>
